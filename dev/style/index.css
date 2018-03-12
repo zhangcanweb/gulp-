@@ -87,6 +87,9 @@ a {
   width: 100%;
   height: 5.33333333rem;
 }
+.movie-list > div {
+  margin: 0.53333333rem 0rem 0rem 0rem;
+}
 .movie-list .title {
   display: -webkit-box;
   display: -ms-flexbox;

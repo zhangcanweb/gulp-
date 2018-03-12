@@ -1,6 +1,3 @@
-var a=1;
-function test(){
-    console.log(a)
-    console.log(b)
-}
-test(a);
+var htmlWidth=document.documentElement.clientWidth||document.body.clientWidth;
+var html=document.getElementsByTagName('html')[0];
+html.style.fontSize=htmlWidth/10+'px';
