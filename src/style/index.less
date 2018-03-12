@@ -1,0 +1,114 @@
+html,body,div,p,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h6,h6,input{
+  padding: 0;
+  margin: 0;
+}
+input,button{
+  outline: none;
+  border: 0;
+}
+.w(@width){
+  width:@width/37.5rem;
+}
+.h(@height){
+  height:@height/37.5rem;
+}
+.fz(@fontSize){
+  font-size:@fontSize/37.5rem;
+}
+.lh(@lineHigh){
+  line-height:@lineHigh/37.5rem;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.margin(@mt,@mf,@mb,@ml){
+  margin:@mt/37.5rem @mf/37.5rem @mb/37.5rem @ml/37.5rem;
+}
+.padding(@pt,@pf,@pb,@pl){
+  padding:@pt/37.5rem @pf/37.5rem @pb/37.5rem @pl/37.5rem;
+}
+a{
+  text-decoration: none;
+}
+.navbar{
+  width: 100%;
+  margin: 0  auto;
+  background-color: #333;
+  .h(50);
+  .lh(35);
+  .list li{
+    float: left;
+    list-style: none;
+    .margin(0,0,0,20);
+    a{
+      color:#fff;
+      .fz(18);
+    }
+  }
+}
+//搜索框
+.search{
+  width: 100%;
+  .h(30);
+  display: flex;
+  input{
+    flex:8;
+    border:1px solid #333;
+    .h(28);
+  }
+  a{
+    flex:1;
+    border:1px solid #333;
+    border-left:0;
+    .lh(28);
+    text-align: center;
+    .fz(18);
+    color: #333;
+  }
+}
+//轮播广告
+ .banner{
+   width: 100%;
+   img{
+     width:100%;
+     .h(200);
+   }
+ }
+
+ .movie-list{
+   .title{
+     display: flex;
+     justify-content:space-between;
+     width: 100%;
+     .h(30);
+     .lh(30);
+     background-color: #444;
+     border-color: #fff;
+     h3{
+       color: #fff;
+       .fz(16);
+     }
+     a{
+       color: #fff;
+       .fz(16);
+     }
+   }
+ }
+ .list{
+   display: flex;
+   flex-wrap: wrap;
+   div{
+     width: 50%;
+     text-align: center;
+   }
+   img{
+     width: 100%;
+     .h(161);
+   }
+   h4{
+     .fz(16);
+   }
+ }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>移动开发</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+<!--导航栏-->
+<div class="navbar">
+    <div class="list">
+        <ul>
+            <li><a href="#">喜剧</a></li>
+            <li><a href="#">恐怖</a></li>
+            <li><a href="#">悬疑</a></li>
+            <li><a href="#">惊悚</a></li>
+            <li><a href="#">动作</a></li>
+            <li><a href="#">爱情</a></li>
+        </ul>
+    </div>
+</div>
+<!--搜索栏-->
+<div class="search">
+    <input type="text" placeholder="请输入电影名称">
+    <a href="#">
+        搜索
+    </a>
+</div>
+<!--轮播广告-->
+<div class="banner">
+    <div>
+        <a href="#">
+            <img src="images/banner1.png" alt="">
+        </a>
+    </div>
+</div>
+<!--电影列表-->
+<div class="movie-list">
+    <!--热门电影-->
+    <div class="hot">
+        <div class="title">
+            <h3>-热门电影-</h3>
+            <a href="">更多>></a>
+        </div>
+        <div class="list">
+            <div>
+                <img src="images/hot1.webp" alt="">
+                <h4>黑豹</h4>
+            </div>
+            <div>
+                <img src="images/hot2.webp" alt="">
+                <h4>红海行动</h4>
+            </div>
+            <div>
+                <img src="images/hot3.webp" alt="">
+                <h4>唐人街探案2</h4>
+            </div>
+            <div>
+                <img src="images/hot4.webp" alt="">
+                <h4>有爱同行</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var htmlWidth=document.documentElement.clientWidth||document.body.clientWidth;
+var html=document.getElementsByTagName('html')[0];
+html.style.fontSize=htmlWidth/10+'px';
+</script>
+</body>
+</html>
