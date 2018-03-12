@@ -39,12 +39,19 @@ a {
   height: 1.33333333rem;
   line-height: 0.93333333rem;
 }
-.navbar .list li {
-  float: left;
+.navbar .list ul {
+  width: 100%;
   list-style: none;
-  margin: 0rem 0rem 0rem 0.53333333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.navbar .list li a {
+.navbar .list ul li {
+  text-align: center;
+}
+.navbar .list ul a {
   color: #fff;
   font-size: 0.48rem;
 }
